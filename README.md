@@ -21,7 +21,7 @@
 **Data Collection**: The dataset used is the UCI Heart Disease Dataset, comprising 303 records and 14 features, including age, sex, chest pain type, resting blood pressure, cholesterol, fasting blood sugar, resting ECG results, maximum heart rate, exercise-induced angina, ST depression, slope, number of vessels colored, and thalassemia.
 
 **Data Preprocessing**:
-- **Data Normalization**: Scaled numerical features using Min-Max scaling.
+- **Data Normalization**: Scaled numerical features using Standard scaling.
 
 **Exploratory Data Analysis (EDA)**:
 - **Descriptive Statistics**: Mean age of patients is 54.43 years with a standard deviation of 9.13 years.
