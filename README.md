@@ -1,5 +1,8 @@
 # Machine Learning Project Report: Heart Attack Prediction
 
+## NOTE: ## 
+To install all necessary libraries, run ```pip install -r requirements.txt``` 
+
 ## 1. Executive Summary
 **Objective**: The objective of this project is to develop a machine learning model that predicts the likelihood of a heart attack based on patient data. This model aims to assist healthcare providers in early diagnosis and preventive measures.
 
