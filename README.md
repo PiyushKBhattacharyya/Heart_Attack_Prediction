@@ -78,17 +78,43 @@
 - **Books**: "Machine Learning in Healthcare" by S. Joshi.
 
 ## 9. Appendices
-**Appendix A**: Detailed Data Description
-- **Data Dictionary**: Description of each feature in the dataset.
+**Appendix A**: Detailed Data Description 
+- **age:** Age of the patient
+- **sex:** Sex of the patient
+    - 0 = Female
+    - 1 = Male
+- **cp:** Chest pain type
+    - 0 = Typical Angina
+    - 1 = Atypical Angina
+    - 2 = Non-anginal Pain
+    - 3 = Asymptomatic
+- **trtbps:** Resting blood pressure (in mm Hg)
+- **chol:** Cholesterol level in mg/dl fetched via BMI sensor
+- **fbs:** Fasting blood sugar
+    - 1 = (fasting blood sugar > 120 mg/dl)
+    - 0 = (fasting blood sugar <= 120 mg/dl)
+- **restecg:** Resting electrocardiographic results
+    - 0 = Normal
+    - 1 = ST-T wave abnormality
+    - 2 = Left ventricular hypertrophy
+- **thalachh:** Maximum heart rate achieved
+- **oldpeak:** Previous peak
+- **slp:** Slope
+- **caa:** Number of major vessels
+- **thall:** Thallium Stress Test result
+    - (0,3)
+- **exng:** Exercise induced angina
+    - 1 = Yes
+    - 0 = No
+- **output:** Target variable
+    - 0 = No Attack
+    - 1 = Attack
 
-**Appendix B**: Detailed Model Parameters and Tuning Results
-- **Grid Search Results**: Detailed results of hyperparameter tuning.
+**Appendix B**: Additional Charts and Visualizations
+- **Correlation Heatmap**: ![plot](Visualizations/Coorelational_Matrix.png)
+- **Pair Plot**: ![plot](Visualizations/Pair_Plot_Dataset.png)
 
-**Appendix C**: Additional Charts and Visualizations
-- **Correlation Heatmap**: [Provide Heatmap Image]
-- **Pair Plot**: [Provide Pair Plot Image]
-
-**Appendix D**: Code Snippets
+**Appendix C**: Code Snippets
 
 **Data Preprocessing**:
 ```python
