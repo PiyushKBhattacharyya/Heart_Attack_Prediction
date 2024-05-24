@@ -81,14 +81,11 @@
 **Appendix A**: Detailed Data Description
 - **Data Dictionary**: Description of each feature in the dataset.
 
-**Appendix B**: Detailed Model Parameters and Tuning Results
-- **Grid Search Results**: Detailed results of hyperparameter tuning.
-
-**Appendix C**: Additional Charts and Visualizations
-- **Correlation Heatmap**: [Provide Heatmap Image]
+**Appendix B**: Additional Charts and Visualizations
+- **Correlation Heatmap**: ![plot](.Visualizations/Coorelational_Matrix.png)
 - **Pair Plot**: [Provide Pair Plot Image]
 
-**Appendix D**: Code Snippets
+**Appendix C**: Code Snippets
 **Data Preprocessing**:
 ```python
 # Extract feature variables (all columns except the first and last) and target variable (last column)
@@ -112,6 +109,7 @@ x_train = scaler.fit_transform(x_train)
 
 # Standardize the testing data (x_test) using the same scaler as training data
 x_test = scaler.transform(x_test)
+```
 
 **Model Training**:
 ```python
@@ -230,6 +228,7 @@ for fold_index, (train_index, val_index) in enumerate(kfold.split(x_train, y_tra
             best_recall_MLP = recall
             best_loss_MLP = eval_loss
             best_training_time_MLP = training_time
+```
 
 **Model Evaluation**:
 ```python
