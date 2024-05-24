@@ -3,7 +3,7 @@
 ## 1. Executive Summary
 **Objective**: The objective of this project is to develop a machine learning model that predicts the likelihood of a heart attack based on patient data. This model aims to assist healthcare providers in early diagnosis and preventive measures.
 
-**Key Findings**: The final model, a Multi-Layer Perceptron (MLP) neural network, achieved an accuracy of 91.67%, a precision of 100%, a recall of 85%, and an AUC-ROC score of 0.92. Key predictors identified include age, cholesterol levels, resting blood pressure, and maximum heart rate achieved.
+**Key Findings**: The final model, a **Multi-Layer Perceptron (MLP) neural network**, achieved an accuracy of **91.67%**, a precision of **100%**, a recall of **85%**, and an AUC-ROC score of **0.92**. Key predictors identified include **age, cholesterol levels, resting blood pressure, and maximum heart rate achieved**.
 
 ## 2. Introduction
 **Background**: Heart disease is one of the leading causes of death globally. Early prediction and diagnosis are crucial for effective treatment and prevention. Machine learning models can analyze complex datasets to identify patterns and predict outcomes.
@@ -18,13 +18,13 @@
 **Gap Analysis**: Many existing models do not generalize well to different populations or are not interpretable by healthcare providers. This project aims to build a robust and interpretable model.
 
 ## 4. Methodology
-**Data Collection**: The dataset used is the UCI Heart Disease Dataset, comprising 303 records and 13 features, including age, sex, chest pain type, resting blood pressure, cholesterol, fasting blood sugar, resting ECG results, maximum heart rate, exercise-induced angina, ST depression, slope, number of vessels colored, and thalassemia.
+**Data Collection**: The dataset used is the **UCI Heart Disease Dataset**, comprising **303 records and 13 features**, including age, sex, chest pain type, resting blood pressure, cholesterol, fasting blood sugar, resting ECG results, maximum heart rate, exercise-induced angina, ST depression, slope, number of vessels colored, and thalassemia.
 
 **Data Preprocessing**:
 - **Data Normalization**: Scaled numerical features using Standard scaling.
 
 **Exploratory Data Analysis (EDA)**:
-- **Descriptive Statistics**: Mean age of patients is 54.43 years with a standard deviation of 9.08 years.
+- **Descriptive Statistics**: Mean age of patients is **54.43 years** with a standard deviation of **9.08 years**.
 - **Visualizations**: Correlation matrix shows strong correlations between target variable and features like age, cholesterol, and max heart rate.
 
 **Model Selection**:
