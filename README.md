@@ -1,9 +1,12 @@
 # Machine Learning Project Report: Heart Attack Prediction
 
+## NOTE: ## 
+To install all necessary libraries, run ```pip install -r requirements.txt``` 
+
 ## 1. Executive Summary
 **Objective**: The objective of this project is to develop a machine learning model that predicts the likelihood of a heart attack based on patient data. This model aims to assist healthcare providers in early diagnosis and preventive measures.
 
-**Key Findings**: The final model, a Multi-Layer Perceptron (MLP) neural network, achieved an accuracy of 91.67%, a precision of 100%, a recall of 85%, and an AUC-ROC score of 0.92. Key predictors identified include age, cholesterol levels, resting blood pressure, and maximum heart rate achieved.
+**Key Findings**: The final model, a **Multi-Layer Perceptron (MLP) neural network**, achieved an accuracy of **91.67%**, a precision of **100%**, a recall of **85%**, and an AUC-ROC score of **0.92**. Key predictors identified include **age, cholesterol levels, resting blood pressure, and maximum heart rate achieved**.
 
 ## 2. Introduction
 **Background**: Heart disease is one of the leading causes of death globally. Early prediction and diagnosis are crucial for effective treatment and prevention. Machine learning models can analyze complex datasets to identify patterns and predict outcomes.
@@ -18,13 +21,13 @@
 **Gap Analysis**: Many existing models do not generalize well to different populations or are not interpretable by healthcare providers. This project aims to build a robust and interpretable model.
 
 ## 4. Methodology
-**Data Collection**: The dataset used is the UCI Heart Disease Dataset, comprising 303 records and 14 features, including age, sex, chest pain type, resting blood pressure, cholesterol, fasting blood sugar, resting ECG results, maximum heart rate, exercise-induced angina, ST depression, slope, number of vessels colored, and thalassemia.
+**Data Collection**: The dataset used is the **UCI Heart Disease Dataset**, comprising **303 records and 13 features**, including age, sex, chest pain type, resting blood pressure, cholesterol, fasting blood sugar, resting ECG results, maximum heart rate, exercise-induced angina, ST depression, slope, number of vessels colored, and thalassemia.
 
 **Data Preprocessing**:
-- **Data Normalization**: Scaled numerical features using Min-Max scaling.
+- **Data Normalization**: Scaled numerical features using Standard scaling.
 
 **Exploratory Data Analysis (EDA)**:
-- **Descriptive Statistics**: Mean age of patients is 54.43 years with a standard deviation of 9.13 years.
+- **Descriptive Statistics**: Mean age of patients is **54.43 years** with a standard deviation of **9.08 years**.
 - **Visualizations**: Correlation matrix shows strong correlations between target variable and features like age, cholesterol, and max heart rate.
 
 **Model Selection**:
@@ -78,14 +81,44 @@
 - **Books**: "Machine Learning in Healthcare" by S. Joshi.
 
 ## 9. Appendices
-**Appendix A**: Detailed Data Description
-- **Data Dictionary**: Description of each feature in the dataset.
+**Appendix A**: Detailed Data Description 
+- **age:** Age of the patient
+- **sex:** Sex of the patient
+    - 0 = Female
+    - 1 = Male
+- **cp:** Chest pain type
+    - 0 = Typical Angina
+    - 1 = Atypical Angina
+    - 2 = Non-anginal Pain
+    - 3 = Asymptomatic
+- **trtbps:** Resting blood pressure (in mm Hg)
+- **chol:** Cholesterol level in mg/dl fetched via BMI sensor
+- **fbs:** Fasting blood sugar
+    - 1 = (fasting blood sugar > 120 mg/dl)
+    - 0 = (fasting blood sugar <= 120 mg/dl)
+- **restecg:** Resting electrocardiographic results
+    - 0 = Normal
+    - 1 = ST-T wave abnormality
+    - 2 = Left ventricular hypertrophy
+- **thalachh:** Maximum heart rate achieved
+- **oldpeak:** Previous peak
+- **slp:** Slope
+- **caa:** Number of major vessels
+- **thall:** Thallium Stress Test result
+    - (0,3)
+- **exng:** Exercise induced angina
+    - 1 = Yes
+    - 0 = No
+- **output:** Target variable
+    - 0 = No Attack
+    - 1 = Attack
 
 **Appendix B**: Additional Charts and Visualizations
-- **Correlation Heatmap**: ![plot](.Visualizations/Coorelational_Matrix.png)
-- **Pair Plot**: [Provide Pair Plot Image]
+- **Correlation Heatmap**: ![plot](Visualizations/Coorelational_Matrix.png)
+- **Pair Plot**: ![plot](Visualizations/Pair_Plot_Dataset.png)
 
 **Appendix C**: Code Snippets
+
 **Data Preprocessing**:
 ```python
 # Extract feature variables (all columns except the first and last) and target variable (last column)
