@@ -24,7 +24,7 @@
 - **Data Normalization**: Scaled numerical features using Standard scaling.
 
 **Exploratory Data Analysis (EDA)**:
-- **Descriptive Statistics**: Mean age of patients is 54.43 years with a standard deviation of 9.13 years.
+- **Descriptive Statistics**: Mean age of patients is 54.43 years with a standard deviation of 9.08 years.
 - **Visualizations**: Correlation matrix shows strong correlations between target variable and features like age, cholesterol, and max heart rate.
 
 **Model Selection**:
