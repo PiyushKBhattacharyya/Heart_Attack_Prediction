@@ -18,7 +18,7 @@
 **Gap Analysis**: Many existing models do not generalize well to different populations or are not interpretable by healthcare providers. This project aims to build a robust and interpretable model.
 
 ## 4. Methodology
-**Data Collection**: The dataset used is the UCI Heart Disease Dataset, comprising 303 records and 14 features, including age, sex, chest pain type, resting blood pressure, cholesterol, fasting blood sugar, resting ECG results, maximum heart rate, exercise-induced angina, ST depression, slope, number of vessels colored, and thalassemia.
+**Data Collection**: The dataset used is the UCI Heart Disease Dataset, comprising 303 records and 13 features, including age, sex, chest pain type, resting blood pressure, cholesterol, fasting blood sugar, resting ECG results, maximum heart rate, exercise-induced angina, ST depression, slope, number of vessels colored, and thalassemia.
 
 **Data Preprocessing**:
 - **Data Normalization**: Scaled numerical features using Standard scaling.
