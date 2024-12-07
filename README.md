@@ -1,4 +1,4 @@
-# Machine Learning Project Report: Heart Attack Prediction
+# Machine Learning Project Report: Heart Disease Prediction
 
 ## NOTE: ## 
 To install all necessary libraries, run ```pip install -r requirements.txt``` 
